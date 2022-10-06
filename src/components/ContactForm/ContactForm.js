@@ -1,8 +1,19 @@
+import { useDispatch } from 'react-redux';
+import { addName } from 'redux/namesSlice';
 import s from './ContactForm.module.css';
 
-const handleSubmit = () => {};
-
 export const ContactForm = () => {
+  const dispatch = useDispatch();
+
+  const handleSubmit = evt => {
+    evt.preventDefault();
+    const form = evt.target;
+    const contactName = form.elements.name.value;
+    const contactNumber = form.elements.number.value;
+    dispatch(addName(contactName, contactNumber));
+    form.reset();
+  };
+
   return (
     <form className={s.form} onSubmit={handleSubmit}>
       <label className={s.label}>
