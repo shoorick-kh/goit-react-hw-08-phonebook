@@ -5,6 +5,6 @@ import { filtersReducer } from './filtersSlice';
 export const store = configureStore({
   reducer: {
     names: namesReducers,
-    // filters: filtersReducer,
+    filter: filtersReducer,
   },
 });
