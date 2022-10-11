@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addName } from 'redux/namesSlice';
+import { addName } from 'redux/contactsSlice';
 import s from './ContactForm.module.css';
 
 export const ContactForm = () => {

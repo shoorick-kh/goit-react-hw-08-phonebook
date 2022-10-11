@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteName } from 'redux/namesSlice';
+import { deleteName } from 'redux/contactsSlice';
 import s from './ContactItem.module.css';
 import PropTypes, { string } from 'prop-types';
 
