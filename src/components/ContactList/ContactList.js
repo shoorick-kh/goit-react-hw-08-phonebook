@@ -6,6 +6,7 @@ import { ContactItem } from '../ContactItem/ContactItem';
 export const ContactList = () => {
   const names = useSelector(getContacts);
   const filter = useSelector(getFilter);
+   
   const normalizedFilter = filter.toLowerCase();
 
   const filteredContacts = () => {
