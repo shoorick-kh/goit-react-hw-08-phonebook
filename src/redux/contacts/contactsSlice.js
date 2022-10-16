@@ -50,7 +50,7 @@ const contactsSlice = createSlice({
   },
 });
 
-export const contactsReducers = contactsSlice.reducer;
+export const contactsReducer = contactsSlice.reducer;
 
 // {
 //   addName: {
